@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="#2C2D39">
+
+    <Switch
+        android:id="@+id/filter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:text="Filtrar por canales de cine"
+        android:textColor="#696661"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <GridView
+        android:id="@+id/grid_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#2C2D39"
+        android:columnWidth="120dp"
+        android:horizontalSpacing="20dp"
+        android:numColumns="auto_fit"
+        android:layout_margin="10dp"
+        android:verticalSpacing="20dp" />
+</LinearLayout>
